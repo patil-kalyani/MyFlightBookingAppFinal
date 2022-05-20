@@ -1,0 +1,32 @@
+<br>
+<table border="1" class="form-group" >
+    <tr class="card-text">
+        <td>Flight Name </td>
+        <td>From Place</td>
+        <td>To Place</td>
+        <td>Scheduled Day</td>
+        <td>Flight Number </td>
+        <td>Instrument Used</td>
+        <td>Business Class Seats</td>
+        <td>Non Business Class Seats</td>
+        <td>Ticket Cost</td>
+        <td>Meal</td>
+        <td>Blocked</td>
+    </tr>
+    <tr *ngFor="let cust of AirlinesModels">
+        <td>{{cust.flightName}}</td>
+        <td>{{cust.fromPlace}}</td>
+        <td>{{cust.toPlace}}</td>
+        <td>{{cust.scheduledDay}}</td>
+        <td>{{cust.flightNumber}}</td>
+        <td>{{cust.instrumentUsed}}</td>
+        <td>{{cust.businessClassSeats}}</td>
+        <td>{{cust.nonBusinessClassSeats}}</td>
+        <td>{{cust.ticketCost}}</td>
+        <td>{{cust.meal}}</td>
+        <td>{{cust.blocked}}</td>
+        <td><input type="button" value="Edit" (click)="EditAirline(cust)" />
+            
+        </td>
+    </tr>
+</table> 

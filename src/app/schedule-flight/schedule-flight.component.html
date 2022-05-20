@@ -1,0 +1,89 @@
+<div class="py-5">
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+            <div class="card rounded-0">
+                <div class="Card-header">
+                    <h3 class="mb-0">schedule-flight</h3>
+                </div>
+                <div class="card-body">
+                    <div class="form">
+                        <div class="form-group">
+                            <label for="AirlineName1">Airline Name</label>
+                            <input type="text" class="form-control" 
+                                placeholder="AirLine Name" [(ngModel)]="AirLine.flightName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="AirLineNumber1">AirLine Number</label>
+                            <input type="number"  class="form-control" [(ngModel)]="AirLine.flightNumber"
+                                placeholder="AirLine Number">
+                        </div>
+                        <div class="form-group">
+                            <label for="FromPlace1">From Place</label>
+                            <input type="text"  class="form-control"
+                                id="FromPlace1" placeholder="From Place" [(ngModel)]="AirLine.fromPlace" >
+                         </div>
+                        <div class="form-group">
+                            <label for="ToPlace1">To Place</label>
+                            <input type="text"  class="form-control"
+                                placeholder="To Place" [(ngModel)]="AirLine.toPlace">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="exampleInputStartdate1">Start Date</label>
+                            <input type="calender"  class="form-control"
+                                id="exampleInputstartdate1" placeholder="Start Date" [(ngModel)]="AirLine.startDate">
+                        </div>
+                        <div class="form-group">
+                            <label for="enddate1">End Date</label>
+                            <input type="calender"  class="form-control"
+                                id="enddate1" placeholder="End Date" [(ngModel)]="AirLine.endDate">
+                        </div>
+                    <div class="form-group">
+                        <label for="IntrumentUsed1">Intrument Used</label>
+                        <input type="text"  class="form-control"
+                            id="IntrumentUsed1" placeholder="Intrument Used" [(ngModel)]="AirLine.instrumentUsed">
+                    </div>
+                
+                    <div class="form-group">
+                    <label for="BusinessClassSeats1">Business Class Seats</label>
+                    <input type="number"  class="form-control"
+                        id="BusinessClassSeats" placeholder="Business Class Seats" [(ngModel)]="AirLine.businessClassSeats">
+                </div>
+            <div class="form-group">
+                <label for="NonBusinessClassSeats1">Non Business Class Seats</label>
+                <input type="number"  class="form-control"
+                    id="NonBusinessClassSeats1" placeholder="Non Business Class Seats" [(ngModel)]="AirLine.nonBusinessClassSeats">
+            </div>
+        <div class="form-group">
+            <label for="Meal1">Meal</label>
+            <input type="text"  class="form-control"
+                id="Meal1" placeholder="Meal" [(ngModel)]="AirLine.meal">
+        </div>
+    <div class="form-group">
+        <label for="scheduledDay1">scheduledDay</label>
+        <input type="text"  class="form-control"
+            id="scheduledDay1" placeholder="scheduledDay" [(ngModel)]="AirLine.scheduledDay">
+    </div>
+<div class="form-group">
+    <label for="ticketCost1">ticket Cost</label>
+    <input type="number"  class="form-control"
+        id="Meal1" placeholder="ticketCost" [(ngModel)]="AirLine.ticketCost">
+</div>
+<div class="form-group">
+    <label for="noOfRows1">No Of Rows</label>
+    <input type="number"  class="form-control"
+        id="noOfRows1" placeholder="Meal" [(ngModel)]="AirLine.noOfRows">
+</div>
+<div class="form-group">
+    <label for="blocked1">blocked</label>
+    <input type="number"  class="form-control"
+        id="blocked1" placeholder="blocked" [(ngModel)]="AirLine.blocked">
+</div>
+
+                        <button type="submit" (click)="scheduleflight()"  class="btn btn-success float-right">schedule-flight</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

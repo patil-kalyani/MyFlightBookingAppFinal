@@ -1,0 +1,49 @@
+
+<div class="py-5">
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+            <div class="card rounded-0">
+                <div class="Card-header">
+                    <h3 class="mb-0">Flight Booking</h3>
+                </div>
+                <div class="card-body">
+                    <div class="form">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email ID</label>
+                            <input type="email" class="form-control" aria-describedby="emailHelp"
+                                placeholder="Enter email" [(ngModel)]="TicketModel.emailId" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputUserName1">UserName</label>
+                            <input type="text"  class="form-control" [(ngModel)]="TicketModel.userName"
+                                placeholder="UserName">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputGender1">Gender</label>
+                            Male<input type="radio"  class="form-control"
+                                id="exampleInputMale1" placeholder="Male" [(ngModel)]="TicketModel.gender" >
+                            Female<input type="radio"  class="form-control"
+                                id="exampleInputfemale1" placeholder="female" [(ngModel)]="TicketModel.gender">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputage1">Age</label>
+                            <input type="number"  class="form-control"
+                                placeholder="Age" [(ngModel)]="TicketModel.age">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputMeal1">Meal</label>
+                            <input type="text"  class="form-control"
+                                id="exampleInputmeal1" placeholder="Meal" [(ngModel)]="TicketModel.meal">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputStartdate1">Start Date</label>
+                            <input type="datetime"  class="form-control"
+                                id="exampleInputstartdate1" placeholder="Start Date" [(ngModel)]="TicketModel.createdOn">
+                        </div>
+                        <button type="submit" (click)="BookTicket()"  class="btn btn-success float-right">Book Ticket</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
